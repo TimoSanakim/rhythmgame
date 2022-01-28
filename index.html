@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Include the volume meter component -->
+		<script src="./checkvolume/volume-meter.js"></script>
+		<!-- Include the main app logic -->
+		<script src="./checkvolume/main.js"></script>
+        
+        <script type="module" src="script.js" defer></script>
+        <!-- <script src="recordversion.js" defer></script>   -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+    </head>
+    <body>        
+        <!-- <div id="test" class="testblok">testblok</div> -->
+        <audio id="song1">
+            <source src="song/short6.mp3">
+        </audio>
+        <audio id="song2">
+            <source src="song/short5.mp3">
+        </audio>
+        <audio id="song3">
+            <source src="song/short7.mp3">
+        </audio>
+            
+        <!-- <div class="debuginfo">
+            
+            
+            <div  id="frames"></div>
+            <div  id="seconds"></div>
+            <div  id="score"></div>
+            <div  id="redi"></div>
+            <div  id="bluei"></div>
+            <div  id="notenumber"></div>
+            <div  id="bluenotenumber"></div>
+            <div  id="micvolume"></div>
+            <div  id="combocount"></div>
+        </div> -->
+        <div id="scoredisplay" class="stats">0</div>
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div id="container" class="container">
+            <div id="combo" class="combo"></div>
+            <div id="notecontainer"></div>
+                <div class="input input-z">Z</div>
+                <div class="input input-mic"><i class="material-icons">mic</i></div>
+            <div id="hitbar" class="hitbar"></div>
+            <div id="hitbar2" class="hitbar2"></div>
+            <div class="redline"></div>
+            <div class="blueline"></div>
+            
+        </div>
+        <div id="oceanbottom" class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+
+        <button class="button" id="start">driverslicence</button>
+        <button class="button" id="start2">some on you loved</button>
+        <button class="button" id="start3">perfect</button>
+
+        <!-- <button id="newnote">new note red</button>
+        <button id="newnote2">new note blue</button>   
+        <button id="capture">capture frame</button> -->
+        <canvas id="meter" width="500" height="50"></canvas>
+        
+    </body>
+    </html>
